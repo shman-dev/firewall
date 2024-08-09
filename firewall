@@ -1,0 +1,16 @@
+import socket
+import random
+
+class myfirewall:
+    host = input("host: ")
+    target_ip = input("target ip: ")
+    blocklist = list()
+
+firewall = myfirewall()
+
+firewall.blocklist.append(firewall.target_ip)
+
+if firewall.target_ip in firewall.blocklist:
+    print(f"{firewall.target_ip} is blocked.")
+else:
+    print(f"{firewall.target_ip} is not blocked.")
